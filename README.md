@@ -6,5 +6,5 @@ Inspiriert wurde das ganze von [Flotomation](https://www.youtube.com/c/Flotomati
 
 In der Ausschaltautomation ist eine Bedingung für einen weiteren Sensor der erkennt ob ich am Tisch sitze oder stehe.
 
-Alles weitere erkläre ich in diesem Video: 
+Alles weitere erkläre ich in diesem Video: https://youtu.be/YzVEAGddLZY
 
