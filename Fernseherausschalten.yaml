@@ -1,0 +1,29 @@
+alias: Fernseher ausschalten
+description: ''
+trigger:
+  - type: opened
+    platform: device
+    device_id: auszufüllen      
+    entity_id: auszufüllen
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 6
+      seconds: 0
+condition:
+  - type: is_not_open
+    condition: device
+    device_id: auszufüllen
+    entity_id: auszufüllen
+    domain: binary_sensor
+action:
+  - service: script.auszufüllen 
+    data: {}
+  - wait_for_trigger:
+      - type: not_opened
+        platform: device
+        device_id: auszufüllen
+        entity_id: auszufüllen
+        domain: binary_sensor
+    continue_on_timeout: false
+mode: single

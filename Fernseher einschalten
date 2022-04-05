@@ -1,0 +1,28 @@
+alias: Fernseher einschalten
+description: ''
+trigger:
+  - type: not_opened
+    platform: device
+    device_id: auszufüllen
+    entity_id: auszufüllen
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+condition: []
+action:
+  - service: script.auszufüllen
+    data: {}
+  - wait_for_trigger:
+      - type: opened
+        platform: device
+        device_id: auszufüllen
+        entity_id: auszufüllen
+        domain: binary_sensor
+        for:
+          hours: 0
+          minutes: 6
+          seconds: 0
+    continue_on_timeout: false
+mode: single
