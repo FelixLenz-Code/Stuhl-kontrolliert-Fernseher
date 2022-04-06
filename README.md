@@ -8,3 +8,9 @@ In der Ausschaltautomation ist eine Bedingung für einen weiteren Sensor der erk
 
 Alles weitere erkläre ich in diesem Video: https://youtu.be/YzVEAGddLZY
 
+## Umsetzung
+### Hardware
+Der Drucksensor wird an die beiden Kontakte des Kontaktsensors angelötet. Kann Parallel zum Reedkontakt angeschlossen werden.
+Der Sensor wird unter das Stuhlkissen gelegt und der Kontaktsensor an den Stuhl geklebt.
+### Software
+Zwei Home Assistant Automatisierungen die das Einschalten und Ausschalten steuern. Beide Yaml Dateien sind in diesem Projekt. Es müssen nur einige Stellen selbst ausgefüllt werden.
